@@ -1,0 +1,56 @@
+{
+  "ref": "refs/heads/main",
+  "before": "9049f1265b7d61be4a8904a9a27120d2064dab3b",
+  "after": "0d1a26e67d8f5eaf1f6ba5c57fc3c7d91ac0fd1c",
+  "compare": "https://github.com/octocat/hello-world/compare/9049f126...0d1a26e6",
+  "repository": {
+    "id": 1296269,
+    "name": "hello-world",
+    "full_name": "octocat/hello-world",
+    "html_url": "https://github.com/octocat/hello-world"
+  },
+  "pusher": {
+    "name": "octocat",
+    "email": "octocat@github.com"
+  },
+  "commits": [
+    {
+      "id": "0d1a26e67d8f5eaf1f6ba5c57fc3c7d91ac0fd1c",
+      "message": "Fix login bug and add unit tests",
+      "timestamp": "2026-11-03T10:15:30+05:30",
+      "url": "https://github.com/octocat/hello-world/commit/0d1a26e67d8f5eaf1f6ba5c57fc3c7d91ac0fd1c",
+      "author": {
+        "name": "Octo Cat",
+        "email": "octocat@github.com",
+        "username": "octocat"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "username": "web-flow"
+      },
+      "added": ["src/auth/__tests__/login.test.js"],
+      "removed": [],
+      "modified": ["src/auth/login.js", "README.md"]
+    },
+    {
+      "id": "abc123def456abc123def456abc123def456abc1",
+      "message": "Refactor database connection pooling",
+      "timestamp": "2026-11-03T10:20:00+05:30",
+      "url": "https://github.com/octocat/hello-world/commit/abc123def456abc123def456abc123def456abc1",
+      "author": {
+        "name": "Octo Cat",
+        "email": "octocat@github.com",
+        "username": "octocat"
+      },
+      "committer": {
+        "name": "Octo Cat",
+        "email": "octocat@github.com",
+        "username": "octocat"
+      },
+      "added": [],
+      "removed": ["src/db/legacy-pool.js"],
+      "modified": ["src/db/pool.js"]
+    }
+  ]
+}
