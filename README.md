@@ -1,6 +1,6 @@
 # git-code-reviewer
 
-A Node.js / Express webhook receiver that listens for GitHub `push` events and stores every commit's metadata in MongoDB. Designed as the data-ingestion layer for an automated code-review pipeline..
+A Node.js / Express webhook receiver that listens for GitHub `push` events and stores every commit's metadata in MongoDB. Designed as the data-ingestion layer for an automated code-review pipeline...
 
 ---
 
