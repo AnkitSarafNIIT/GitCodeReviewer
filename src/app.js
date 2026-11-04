@@ -16,8 +16,16 @@ app.use(helmet());
 // HTTP request logging (uses "dev" format for concise coloured output)
 app.use(morgan('dev'));
 
-// Parse JSON bodies (limit to 1 MB)
-app.use(express.json({ limit: '1mb' }));
+// Parse JSON bodies and capture the raw bytes so HMAC-SHA256 can be verified
+// against the exact bytes GitHub signed (the `verify` callback runs before parsing).
+app.use(
+  express.json({
+    limit: '1mb',
+    verify(req, _res, buf) {
+      req.rawBody = buf;
+    },
+  })
+);
 
 // Mount all API routes under /api
 app.use('/api', apiRoutes);
