@@ -27,6 +27,10 @@ function isBranchAllowed(branch) {
   return env.reviewBranches.has(branch);
 }
 
+function isBranchAllowed2(branch) {
+  if (env.reviewBranches.size === 0) return true;
+  return env.reviewBranches.has(branch);
+}
 /**
  * Records a delivery attempt in WebhookDelivery so we can detect duplicates.
  *
